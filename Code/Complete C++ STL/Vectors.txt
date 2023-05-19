@@ -1,0 +1,75 @@
+//Vectors
+//Vectors is a container which strores elements same as array does.
+//if there is a requirement where u do not know the size of a perticular data structure that will be required thats when we are require vector.
+
+void explainVector(){
+	vector<int> v; //Declare vector
+	
+	v.push_back(1); //inserting a value in th vector conatiner
+	v.emplace_back(2); //same as push_back but much faster than it.
+
+	vector<pair<int,int>> vec; //declaring vector with pair
+
+	vec.push_back({1, 2}); //inserting pair values in vector, need to use brackets .
+	vec.emplace_back(1, 2); //inserting pair values in vector, not needed to use brsckets,
+
+	vector<int> v(5,100); //inserting 5 100's.
+
+	vector<int> v(5); //declaring vector of space 5
+
+	vector<int> v1(5, 20); //declaring vector of space 5 and valu 5 20's
+	vector<int> v2(v1); //copying values and space of v1 vector to v2.
+	
+	vector<int>::iterator it = v.begin(); // this line is referring to the first value in the vector container.
+	
+	it++;
+	cout<<*(it) <<" "; // for ex. {10,20,30,40} is the vector , this line will print 20 as v.begin is 10 after it++ it becomes 20.
+	
+	it = it + 2;
+	cout<<*(it)<<" "; // this line wil print 40.
+
+	vector<int>::iterator it = v.end(); // v.end is reffering to the last space in the vector after the last value. i.e {10,20,30,40,_}
+	vector<int>::iterator it = v.rend(); //v.rend is reffering to the first space int the vector before the first value.i.e {_,10,20,30,40}
+	vector<int>::iterator it = v.rbegin(); // v.rbegin is reffering to the last vlaue of the vector i.e {10,20,30,40} 40
+
+	cout<< v[0] << " " << v.at[0]; // generally v[0] is used to get the value in a vector of a specific index 
+	cout<< v.back()<<" "; // it refers to the last value of the vector.
+
+	for(vector<int>::iterator it = v.begin(); it != v.end(); it++){   //by using for loop we can print all the value of the vector
+	cout<< *(it) << " ";
+	}
+
+	for(auto it = v.begin(); it != v.end(); it++){  //by using auto we can replace the use data type , it will automatically get it by guessing the value
+	cout<<*(it) << " ";
+	}
+
+	for(auto it : v){   //print the values in vector by traversing using for loop
+	cout<< it << " ";
+	}
+
+	// {10,20,30,40}
+	v.erase(v.begin()+1); //will delete 20 from the vector.
+
+	// {10,20,30,40,50}
+	v.erase(v.begin() +2, v.begin() +4) // will delete 30 and 40 [start , end]
+
+	vector<int> v(2,100); //{100, 100}
+	v.insert(v.begin,300); //{300, 100, 100}
+	v.insert(v.begin+1,2,10) // {300, 10, 10, 100, 100}
+
+	//{10,20}
+	v.size(); //2
+	
+	// {10,20}
+	v.pop_back(); // {10}
+
+	//v1-> {10, 20}
+	//v2-> {30, 40}
+	v1.swap(v2); // v1 -> {30, 40} v2 -> {10, 20}
+
+	v.clear(); //erases the entire vector
+	
+	cout<<v.empty(); // return true if it is empty , and return false if it has value.	 
+
+	
+}

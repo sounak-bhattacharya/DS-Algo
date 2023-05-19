@@ -1,0 +1,35 @@
+// Set takes elements in Ordered manner and only takes unique values.
+void explainSet(){
+    set<int> st;
+    st.insert(3);  // {3}
+    st.emplace(5); // {3, 5}
+    st.insert(2);  // {2, 3, 5}
+    st.insert(2);  // {2, 3, 5}
+    st.insert(6);  // {2, 3, 5, 6}
+    
+    //functionality of insert in vector can be used  also, that only increases efficiency;
+    // begin() end() rbegin() rend() size() swap() empty() are same as above
+    //{2, 3, 5, 6}
+    auto it = st.find(6);
+    
+    //{2, 3, 5, 6}
+    auto it = st.find(7);
+    
+    //{2, 3, 5}
+    st.erase(6); // deletes 6 //takes lograthmic time
+       
+    int cnt = st.count(2);
+    
+    auto it = st.find(3);
+    st.erase(it); // it takes constant time
+    
+    // {1, 2, 3, 4, 5}
+    auto it1 = st.find(2);
+    auto it2 = st.find(4);
+    st.erase(it1, it2); //after erase {1, 4, 5}
+    
+    // lower bound and upper boun works in the same way as in vector it does
+    
+    auto it = st.lower_bound(2);
+    auto it = st.upper_bound(3);
+}

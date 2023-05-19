@@ -1,0 +1,46 @@
+DSA Topics to be covered by plan:-
+ 1) Basic
+ 	-Arrays
+	-Linked List
+	-Stacks
+	-Queues
+Practice Questions related to this:-
+DSA Sheet by FRAZ
+DSA Sheet 251
+DSA SDE Sheet by Striver
+LeetCode
+Codechef
+Codeforces
+2) Basic Algorithms
+	-Searching
+	-Sorting
+	-Greedy
+	-Recursion
+	-Backtracking
+Practice Questions related to this:-
+DSA Sheet by FRAZ
+DSA Sheet 251
+DSA SDE Sheet by Striver
+LeetCode
+Codechef
+Codeforces
+3) Hard topics
+	-Trees
+	-Dynamic Programming
+	-Graphs
+	-Tries
+Practice Questions related to this:-
+DSA Sheet by FRAZ
+DSA Sheet 251
+DSA SDE Sheet by Striver
+LeetCode
+Codechef
+Codeforces
+
+Contests to be participated instead of watching it is hard or not!
+Upsolving the questions that are not solved by me!
+Revision
+
+DEVLEOPMENT
+
+Web Development Project to be made.

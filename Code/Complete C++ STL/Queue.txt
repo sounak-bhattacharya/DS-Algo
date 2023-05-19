@@ -1,0 +1,18 @@
+//Queue //First In First Out //FIFO
+void explainQueue(){
+	Queue<int> q;
+	q.push(1);
+	q.push(2);
+	q.emplace(3); //{1,2,3}
+
+	q.back() += 5;
+	cout<<q.back(); // prints 8 (3+5)
+
+	cout<<q.front(); // prints 1
+
+	q.pop(); //{2,9}
+
+	cout<< q.front; //prints 2
+	
+	//size, swap , empty same as stack
+}
